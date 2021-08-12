@@ -1,10 +1,10 @@
 import Link from "next/link";
 
 export const Navigation = () => (
-  <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav className="navbar navbar-expand-lg navbar-primary bg-primary ">
     <div className="container">
       <Link href="/">
-        <a className="navbar-brand">Home</a>
+        <a className="navbar-brand text-white">Eventos</a>
       </Link>
       <button
         className="navbar-toggler"
@@ -20,13 +20,8 @@ export const Navigation = () => (
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link href="/about">
-              <a className="nav-link">About</a>
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link href="/Services">
-              <a className="nav-link">Services</a>
+            <Link href="/members">
+              <a className="nav-link text-white">Miembros</a>
             </Link>
           </li>
         </ul>

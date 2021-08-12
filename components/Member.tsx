@@ -15,6 +15,7 @@ const Member = (props: any) => {
 						<h5>
 							{member.displayName}
 						</h5>
+						<span className="badge badge-info">Member role</span>
 					</li>
 				))}
       </ul>
