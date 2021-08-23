@@ -32,19 +32,10 @@ const Members = (props: any) => (
 	</Container>
 );
 
-// Members.getInitialProps = async (ctx: Context<any>) => {
-// 	const res = await fetch("http://localhost:5000/api/members");
-//   const resJSON = await res.json();
-// 	// console.log(JSON.stringify(resJSON, null, 4));
-//   return {
-//     members: resJSON,
-//   };
-// };
-
 export async function getServerSideProps(context: Context<any>) {
 	const res = await fetch("http://localhost:5000/api/members");
   const members = await res.json();
-	// console.log(JSON.stringify(resJSON, null, 4));
+	console.log(JSON.stringify(members, null, 4));
 
   if (!members) {
     return {
